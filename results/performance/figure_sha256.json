@@ -1,0 +1,118 @@
+[
+  {
+    "path": "results/performance/Figures/C6o/01_reward.pdf",
+    "sha256": "e4186f8472f93ea6a46a8286a9f908deeb3b6f755a3e878aa92fd5b8eeac0e49"
+  },
+  {
+    "path": "results/performance/Figures/C6o/01_reward.png",
+    "sha256": "7e94230b9c2eb72c6d2e96f8be604b25d3157edf82b0832872778b256072caa6"
+  },
+  {
+    "path": "results/performance/Figures/C6o/02_cumulative_regret.pdf",
+    "sha256": "11f5f5c0a3acca54177fb26727befb8dd2d1983d5169f033f5ff4a2024507050"
+  },
+  {
+    "path": "results/performance/Figures/C6o/02_cumulative_regret.png",
+    "sha256": "e6e46ce1b233258adb7f3b8101f2c4d5aaafe6c01046d085788df724677713a7"
+  },
+  {
+    "path": "results/performance/Figures/C6o/03_jain_fairness.pdf",
+    "sha256": "5d4cf3cc6c9855b984d89246207e88783c36953ded9f82c5dcb8dbf1dfccec89"
+  },
+  {
+    "path": "results/performance/Figures/C6o/03_jain_fairness.png",
+    "sha256": "ed5fe27a9d4713d156d3f2cbab6c3d316abc234eaa9c55d031daa259c12c3f48"
+  },
+  {
+    "path": "results/performance/Figures/C6o/04_aggregate_throughput.pdf",
+    "sha256": "a3aa12d3c909240ebd521728ecc49e2f2fc9da6ca61c7f10a9f8d074ff54d48b"
+  },
+  {
+    "path": "results/performance/Figures/C6o/04_aggregate_throughput.png",
+    "sha256": "5c15203dd53d7591ccc2b5e29657c3bf76a99bc6ba894090cd9a6cc745e53c79"
+  },
+  {
+    "path": "results/performance/Figures/MER_FLOORS_BAD_DIM/01_reward.pdf",
+    "sha256": "c9313c47e1b9b1c5bd63f391ff8bba93aeff37835d2a011b29154dc2deef1d5d"
+  },
+  {
+    "path": "results/performance/Figures/MER_FLOORS_BAD_DIM/01_reward.png",
+    "sha256": "2308385bbf2c18445af27a169a98f2e9e45be02bb41336af792d3bb4fb471773"
+  },
+  {
+    "path": "results/performance/Figures/MER_FLOORS_BAD_DIM/02_cumulative_regret.pdf",
+    "sha256": "babc58f50abface6a60da6a6704b86f56a55448795792786f2d3c0e1cd181a34"
+  },
+  {
+    "path": "results/performance/Figures/MER_FLOORS_BAD_DIM/02_cumulative_regret.png",
+    "sha256": "81541c59d8ecf1b9cfcca67c2ea0220ca5a65eb6379f4aa8c3666c88badebe32"
+  },
+  {
+    "path": "results/performance/Figures/MER_FLOORS_BAD_DIM/03_jain_fairness.pdf",
+    "sha256": "1008b5ce080022c4a1031e9d7c4f69064c484b2e0593d72e3176b684a5ad3e9c"
+  },
+  {
+    "path": "results/performance/Figures/MER_FLOORS_BAD_DIM/03_jain_fairness.png",
+    "sha256": "7a6b1c8ab73d608abb09f8c3901afee34f6fed43e00f8e5922760b6953b2e9ca"
+  },
+  {
+    "path": "results/performance/Figures/MER_FLOORS_BAD_DIM/04_aggregate_throughput.pdf",
+    "sha256": "3276ae5988fe735907a359c8a64ccfc0010c54d26e22c686f43728d9c8f77c2f"
+  },
+  {
+    "path": "results/performance/Figures/MER_FLOORS_BAD_DIM/04_aggregate_throughput.png",
+    "sha256": "1ce4227bcd8d6df873d836f7587a9ea0520e0b21baa5883b7c147ab92c9ba248"
+  },
+  {
+    "path": "results/performance/Figures/MER_FLOORS_CH20_S5/01_reward.pdf",
+    "sha256": "b49004bffeb410828e294d77e5cc618e0ecf3d4e681154298d3448016351f653"
+  },
+  {
+    "path": "results/performance/Figures/MER_FLOORS_CH20_S5/01_reward.png",
+    "sha256": "a8dc54ca1e078ebf5604fb59aba058797132a1f928696ea407b099528ca8ebdc"
+  },
+  {
+    "path": "results/performance/Figures/MER_FLOORS_CH20_S5/02_cumulative_regret.pdf",
+    "sha256": "b17f2c0da305ad4c051483b9779b51a8cc1103b5c8cb375f03c6f7ab568da5fc"
+  },
+  {
+    "path": "results/performance/Figures/MER_FLOORS_CH20_S5/02_cumulative_regret.png",
+    "sha256": "8cb4c723de8e4cb2155fa5c781942863930e95fb0342a2bf9407354864de01c1"
+  },
+  {
+    "path": "results/performance/Figures/MER_FLOORS_CH20_S5/03_jain_fairness.pdf",
+    "sha256": "97949e1d0e469f97b4627762ee6c07893d3a3557769a28340fb504251e7620fe"
+  },
+  {
+    "path": "results/performance/Figures/MER_FLOORS_CH20_S5/03_jain_fairness.png",
+    "sha256": "85d77fd27c436569505bccb3fc37f2589635ec2903c36e7902a94c06bd7940db"
+  },
+  {
+    "path": "results/performance/Figures/MER_FLOORS_CH20_S5/04_aggregate_throughput.pdf",
+    "sha256": "2f914a1323e76878a8e4630ce044cec7715e6f6f95e9b66513e7c7086da8661d"
+  },
+  {
+    "path": "results/performance/Figures/MER_FLOORS_CH20_S5/04_aggregate_throughput.png",
+    "sha256": "be391e53e3108401ba03f9cba582940d113fa36ccb35f25b8a3cf69d9e4055af"
+  },
+  {
+    "path": "results/performance/Figures/README.txt",
+    "sha256": "a461f584adf993b283ac2dbf4990b2cf1e6640371ec9789510e28ff532eb8b78"
+  },
+  {
+    "path": "results/performance/Figures/figure_export.json",
+    "sha256": "3b831f8045563b46a6e9fc4619c1d981c1ae59c1eb98da9da26aed27a615d880"
+  },
+  {
+    "path": "results/performance/Figures/loss_endpoints.csv",
+    "sha256": "0e4a2919ac499757adc6ee63fb743a4bc1e55eee5b075c887ff42d16d8de7014"
+  },
+  {
+    "path": "results/performance/Figures/plotted_median_curves.npz",
+    "sha256": "157c6267204510726bff90568fb6f2870c32ec5ad9a3c487a7d5fc20ea4d2be2"
+  },
+  {
+    "path": "results/performance/Figures/summary.csv",
+    "sha256": "cce143f0451dfbf0af4e3eb5a8f91bbeb31f480029ecdf3d9dd90dbea542dfe7"
+  }
+]

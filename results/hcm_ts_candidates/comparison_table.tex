@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering
+\caption{HCM-TS Fresh-Proposal Limit Ablation (25 Paired Seeds; $\epsilon_f=0.1$, Candidate Cap 512).}
+\begin{tabular}{llccccc}
+\hline
+Topology & Method & $\bar r$ & $\hat L_{\mathrm{ref}}$ & $N_{\mathrm{stv}}$ & $J$ & $S_{\mathrm{agg}}$ \\
+\hline
+C6 & HCM-TS (128) & 0.914 & 45.2 & 0.15 & 0.869 & 394.7 \\
+C6 & HCM-TS (256) & 0.917 & 47.1 & 0.14 & 0.890 & 407.9 \\
+C6 & Neural Bandit (HCM) & 0.921 & 24.6 & 0.08 & 0.904 & 413.5 \\
+C6 & QNN Bandit (HCM) & 0.921 & 21.6 & 0.06 & 0.927 & 429.8 \\
+ENT-Clustered & HCM-TS (128) & 0.937 & 69.1 & 2.38 & 0.866 & 1005.8 \\
+ENT-Clustered & HCM-TS (256) & 0.923 & 82.4 & 2.66 & 0.848 & 994.1 \\
+ENT-Clustered & Neural Bandit (HCM) & 0.946 & 24.7 & 1.89 & 0.887 & 960.9 \\
+ENT-Clustered & QNN Bandit (HCM) & 0.948 & 25.5 & 1.83 & 0.888 & 940.7 \\
+ENT-Dispersed & HCM-TS (128) & 0.739 & 352.3 & 11.83 & 0.602 & 382.4 \\
+ENT-Dispersed & HCM-TS (256) & 0.747 & 347.1 & 12.02 & 0.594 & 367.0 \\
+ENT-Dispersed & Neural Bandit (HCM) & 0.791 & 321.1 & 10.15 & 0.639 & 427.6 \\
+ENT-Dispersed & QNN Bandit (HCM) & 0.801 & 285.0 & 9.06 & 0.676 & 430.4 \\
+\hline
+\end{tabular}
+\end{table*}

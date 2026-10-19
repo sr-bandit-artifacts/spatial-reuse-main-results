@@ -1,0 +1,72 @@
+HCM-TS: novel_candidates 128 -> 256
+75/75 runs; 3 topologies; seeds 1--25; 150 simulated seconds.
+
+Other settings unchanged: epsilon_f=0.1, pool cap=512, native TS epsilon=0.1, HCM global epsilon=0.0.
+Reward, loss, Jain and throughput: median of per-seed metrics. N_stv: mean over seeds of tail-average counts.
+Tail cycles:1901--2000; loss:all 2001 cycles against the same frozen empirical reference.
+
+Topology | Method | Reward | Loss | N_stv | Jain | Mbps
+--- | --- | --- | --- | --- | --- | ---
+C6 | HCM-TS (128) | 0.9144 | 45.2 | 0.155 | 0.8694 | 394.7
+C6 | HCM-TS (256) | 0.9166 | 47.1 | 0.142 | 0.8901 | 407.9
+C6 | Neural Bandit (HCM) | 0.9214 | 24.6 | 0.080 | 0.9044 | 413.5
+C6 | QNN Bandit (HCM) | 0.9215 | 21.6 | 0.061 | 0.9268 | 429.8
+ENT-Clustered | HCM-TS (128) | 0.9373 | 69.1 | 2.380 | 0.8665 | 1005.8
+ENT-Clustered | HCM-TS (256) | 0.9231 | 82.4 | 2.661 | 0.8481 | 994.1
+ENT-Clustered | Neural Bandit (HCM) | 0.9463 | 24.7 | 1.886 | 0.8867 | 960.9
+ENT-Clustered | QNN Bandit (HCM) | 0.9478 | 25.5 | 1.835 | 0.8875 | 940.7
+ENT-Dispersed | HCM-TS (128) | 0.7394 | 352.3 | 11.834 | 0.6024 | 382.4
+ENT-Dispersed | HCM-TS (256) | 0.7475 | 347.1 | 12.022 | 0.5942 | 367.0
+ENT-Dispersed | Neural Bandit (HCM) | 0.7912 | 321.1 | 10.151 | 0.6388 | 427.6
+ENT-Dispersed | QNN Bandit (HCM) | 0.8012 | 285.0 | 9.057 | 0.6757 | 430.4
+
+Paired 95% percentile bootstrap CIs (10,000 resamples; exploratory, unadjusted):
+Topology | Contrast | Metric | Difference [95% CI]
+--- | --- | --- | ---
+C6 | HCM-TS (256) - HCM-TS (128) | tail_reward | +0.002131 [-0.002648, +0.009214]
+C6 | HCM-TS (256) - HCM-TS (128) | cumulative_loss | +1.966203 [-7.400542, +9.436303]
+C6 | HCM-TS (256) - HCM-TS (128) | starving_stations | -0.012800 [-0.070000, +0.046000]
+C6 | HCM-TS (256) - HCM-TS (128) | jain | +0.020669 [-0.008721, +0.037022]
+C6 | HCM-TS (256) - HCM-TS (128) | throughput_mbps | +13.175210 [+2.600050, +28.221260]
+C6 | Neural Bandit (HCM) - HCM-TS (256) | tail_reward | +0.004798 [+0.001639, +0.009147]
+C6 | Neural Bandit (HCM) - HCM-TS (256) | cumulative_loss | -22.548829 [-29.139292, -5.766951]
+C6 | Neural Bandit (HCM) - HCM-TS (256) | starving_stations | -0.061600 [-0.119200, -0.006800]
+C6 | Neural Bandit (HCM) - HCM-TS (256) | jain | +0.014285 [-0.017516, +0.039150]
+C6 | Neural Bandit (HCM) - HCM-TS (256) | throughput_mbps | +5.551480 [-16.106390, +28.136890]
+C6 | QNN Bandit (HCM) - HCM-TS (256) | tail_reward | +0.004887 [+0.002550, +0.009973]
+C6 | QNN Bandit (HCM) - HCM-TS (256) | cumulative_loss | -25.529437 [-32.771758, -13.005350]
+C6 | QNN Bandit (HCM) - HCM-TS (256) | starving_stations | -0.080800 [-0.134400, -0.031190]
+C6 | QNN Bandit (HCM) - HCM-TS (256) | jain | +0.036694 [+0.007968, +0.067552]
+C6 | QNN Bandit (HCM) - HCM-TS (256) | throughput_mbps | +21.863980 [-0.896240, +42.352140]
+ENT-Clustered | HCM-TS (256) - HCM-TS (128) | tail_reward | -0.014118 [-0.026667, -0.000196]
+ENT-Clustered | HCM-TS (256) - HCM-TS (128) | cumulative_loss | +13.274389 [-10.039202, +32.705796]
+ENT-Clustered | HCM-TS (256) - HCM-TS (128) | starving_stations | +0.281600 [-0.026800, +0.576810]
+ENT-Clustered | HCM-TS (256) - HCM-TS (128) | jain | -0.018341 [-0.024480, +0.019377]
+ENT-Clustered | HCM-TS (256) - HCM-TS (128) | throughput_mbps | -11.718530 [-100.630900, +51.486940]
+ENT-Clustered | Neural Bandit (HCM) - HCM-TS (256) | tail_reward | +0.023137 [+0.005882, +0.034314]
+ENT-Clustered | Neural Bandit (HCM) - HCM-TS (256) | cumulative_loss | -57.686288 [-64.980393, -23.921546]
+ENT-Clustered | Neural Bandit (HCM) - HCM-TS (256) | starving_stations | -0.775600 [-1.090800, -0.458390]
+ENT-Clustered | Neural Bandit (HCM) - HCM-TS (256) | jain | +0.038541 [-0.020011, +0.049113]
+ENT-Clustered | Neural Bandit (HCM) - HCM-TS (256) | throughput_mbps | -33.207420 [-197.659660, +81.559340]
+ENT-Clustered | QNN Bandit (HCM) - HCM-TS (256) | tail_reward | +0.024706 [+0.007059, +0.033726]
+ENT-Clustered | QNN Bandit (HCM) - HCM-TS (256) | cumulative_loss | -56.843166 [-68.411542, -26.391972]
+ENT-Clustered | QNN Bandit (HCM) - HCM-TS (256) | starving_stations | -0.826400 [-1.144820, -0.499200]
+ENT-Clustered | QNN Bandit (HCM) - HCM-TS (256) | jain | +0.039387 [+0.001375, +0.043333]
+ENT-Clustered | QNN Bandit (HCM) - HCM-TS (256) | throughput_mbps | -53.324010 [-124.704900, +29.117530]
+ENT-Dispersed | HCM-TS (256) - HCM-TS (128) | tail_reward | +0.008039 [-0.036667, +0.031765]
+ENT-Dispersed | HCM-TS (256) - HCM-TS (128) | cumulative_loss | -5.215665 [-41.647069, +46.960802]
+ENT-Dispersed | HCM-TS (256) - HCM-TS (128) | starving_stations | +0.187200 [-1.182410, +1.573200]
+ENT-Dispersed | HCM-TS (256) - HCM-TS (128) | jain | -0.008214 [-0.035679, +0.029682]
+ENT-Dispersed | HCM-TS (256) - HCM-TS (128) | throughput_mbps | -15.462960 [-56.720460, +25.775730]
+ENT-Dispersed | Neural Bandit (HCM) - HCM-TS (256) | tail_reward | +0.043725 [+0.007255, +0.078823]
+ENT-Dispersed | Neural Bandit (HCM) - HCM-TS (256) | cumulative_loss | -25.960803 [-73.548982, +20.019639]
+ENT-Dispersed | Neural Bandit (HCM) - HCM-TS (256) | starving_stations | -1.870400 [-3.381210, -0.251080]
+ENT-Dispersed | Neural Bandit (HCM) - HCM-TS (256) | jain | +0.044619 [-0.008484, +0.077471]
+ENT-Dispersed | Neural Bandit (HCM) - HCM-TS (256) | throughput_mbps | +60.660310 [+19.510640, +99.378730]
+ENT-Dispersed | QNN Bandit (HCM) - HCM-TS (256) | tail_reward | +0.053725 [+0.022549, +0.119216]
+ENT-Dispersed | QNN Bandit (HCM) - HCM-TS (256) | cumulative_loss | -62.058859 [-130.980363, -9.588456]
+ENT-Dispersed | QNN Bandit (HCM) - HCM-TS (256) | starving_stations | -2.964400 [-4.399660, -1.449590]
+ENT-Dispersed | QNN Bandit (HCM) - HCM-TS (256) | jain | +0.081496 [+0.021591, +0.104362]
+ENT-Dispersed | QNN Bandit (HCM) - HCM-TS (256) | throughput_mbps | +63.458730 [+30.163860, +122.443504]
+
+Scope: the changed proposal limit applies to the HCM-TS epsilon_f floor. Native independent-arm selection remains as implemented; equal proposal limits alone do not make all acquisition procedures identical.

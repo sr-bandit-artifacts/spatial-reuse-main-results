@@ -1,0 +1,22 @@
+{
+  "panels": 12,
+  "pdf_files": 12,
+  "png_files": 12,
+  "methods": 9,
+  "seeds": 25,
+  "measurement_cycles": 2001,
+  "titles": false,
+  "plotting": {
+    "smoothing_window": 21,
+    "axis_font_pt": 22,
+    "ticks_legend_font_pt": 18,
+    "titles": false,
+    "loss_smoothing": false
+  },
+  "simulation_rerun": false,
+  "frozen_references": {
+    "C6o": 0.92556556,
+    "MER_FLOORS_CH20_S5": 0.95215664,
+    "MER_FLOORS_BAD_DIM": 0.85254904
+  }
+}

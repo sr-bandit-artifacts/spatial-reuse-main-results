@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software in research, please cite this repository and identify the commit used."
+type: software
+title: "Representation-aware spatial reuse: main results"
+authors:
+  - name: "sr-bandit-artifacts"
+    website: "https://github.com/sr-bandit-artifacts"
+url: "https://github.com/sr-bandit-artifacts/spatial-reuse-main-results"
+repository-code: "https://github.com/sr-bandit-artifacts/spatial-reuse-main-results"
+date-released: "2026-10-07"
+license:
+  - MIT
+  - GPL-2.0-only

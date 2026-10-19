@@ -1,0 +1,2024 @@
+{
+  "schema_version": 1,
+  "metric_definition": "Per-cycle direct starvation count from AP agent_state observation index 6 times the associated STA count, rounded after integer validation.",
+  "aggregation": "For each physical seed, average cycles 1901..2000 inclusive; Table V reports the arithmetic mean of those 25 seed averages.",
+  "canonical_reward_pairing": "Every imported source reward row matches the included corresponding reward matrix exactly at cycles 0..2000.",
+  "recovered_archive": {
+    "original_repository_path": "scratch/archived_experiments/20260919_arpfix_pilot_qnn_hcm_CH20_s1_5__shards.tar.zst",
+    "sha256": "b51406cdfaff6b5598d8ade869d6293b17570081f126665e26bdf5c2c1c182ee",
+    "used_for": "ENT-Clustered QNN Bandit (HCM) physical seeds 6..21"
+  },
+  "datasets": [
+    {
+      "topology": "C6o",
+      "method_id": "default",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 1.5784,
+      "cross_seed_median_of_per_seed_tail_average": 1.57,
+      "output_path": "results/performance/data/C6o/default_starving_stations.tsv",
+      "output_sha256": "e92b11ad77fab5d8210b0d526eb2f28842561c528dedd26395fe30bdbb0a35af",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_classic_C6o/data/C6o/idle/C6o_333333333333_20_DEF_STD_150.0_IDLE_UNI_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "0842d96b604658d57b282aaefd92c69d4d67c8396c11157de8382d221ad4ff24"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_classic_C6o/data/C6o/idle/C6o_333333333333_20_DEF_STD_150.0_IDLE_UNI_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "69247f20b72d345c18b9f520e99d7f51b04126258a6bfb848dc93a04b3881a10"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    },
+    {
+      "topology": "C6o",
+      "method_id": "epsilon_greedy",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 0.5428,
+      "cross_seed_median_of_per_seed_tail_average": 0.44,
+      "output_path": "results/performance/data/C6o/epsilon_greedy_starving_stations.tsv",
+      "output_sha256": "c4ffe6654b0413ac0f7896ff33ee7755db0ffed257e67f0b30b43de36cefdea4",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_classic_C6o/data/C6o/egreedy/C6o_333333333333_20_DEF_STD_150.0_EGREED_UNI_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "d118c68a3ec65209cc2c3b28d360cd714d16d4db703ef9efeaa3ed6ec2013499"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_classic_C6o/data/C6o/egreedy/C6o_333333333333_20_DEF_STD_150.0_EGREED_UNI_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "1e7a5f5397058d7715f79b31e52bde78f5ba8fc480e9136f0b344371ad16f108"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    },
+    {
+      "topology": "C6o",
+      "method_id": "gm_ts",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 1.0388000000000002,
+      "cross_seed_median_of_per_seed_tail_average": 1.05,
+      "output_path": "results/performance/data/C6o/gm_ts_starving_stations.tsv",
+      "output_sha256": "9bdd5f5a1c491c06328e778e8805a5b9d0b85d47361c536aded69c549234b30f",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_classic_C6o/data/C6o/tgnorm_paper/C6o_333333333333_20_DEF_STD_150.0_TGNORM_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "fdc92aa4a1b690920c27fd9e9407bde114b652fe5e17b6728243050854a5f1cd"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_classic_C6o/data/C6o/tgnorm_paper/C6o_333333333333_20_DEF_STD_150.0_TGNORM_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "d327ffa6459e6ca56a1a45aae34c468cf9c43d87e1b6afd461188469d2264d7c"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    },
+    {
+      "topology": "C6o",
+      "method_id": "hcm_ts",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 0.142,
+      "cross_seed_median_of_per_seed_tail_average": 0.1,
+      "output_path": "results/performance/data/C6o/hcm_ts_starving_stations.tsv",
+      "output_sha256": "a0d43ae6d8f28566953d66f3c9376961200ca6bfb10ca362d5c93641e286b70f",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "original_run/hcm_ts256/C6o/data/C6o/tgnorm_ring/C6o_333333333333_20_DEGA_STD_150.0_TGNORM_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "97cf972c013210b02b171772498ef7ed0a59c946e7a65b2939fd7cef51874a85"
+          },
+          "paired_reward": {
+            "original_repository_path": "original_run/hcm_ts256/C6o/data/C6o/tgnorm_ring/C6o_333333333333_20_DEGA_STD_150.0_TGNORM_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "f3499c07c73dfa605484f4b4c9b3ac0f91e8254372f1517e0c66ebc0a75ddb1e"
+          },
+          "source_container": "HCM_TS_NOVEL256_25SEED_20261007"
+        }
+      ],
+      "source_provenance": "hcm_ts256_run_provenance.json"
+    },
+    {
+      "topology": "C6o",
+      "method_id": "inspire",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 0.7608,
+      "cross_seed_median_of_per_seed_tail_average": 0.62,
+      "output_path": "results/performance/data/C6o/inspire_starving_stations.tsv",
+      "output_sha256": "b237f2003dce4513e320a5ece1e025ca4db5834eab0b541f5fc73ba32b642143",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_classic_C6o/data/C6o/inspire/C6o_333333333333_20_DEF_STD_150.0_INSPIRE_UNI_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "b2ee677067274fd95fc1ccf922d43e629e4bcc420f3bdcdacc9fdb456ee8a950"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_classic_C6o/data/C6o/inspire/C6o_333333333333_20_DEF_STD_150.0_INSPIRE_UNI_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "dbd966b66484e0b6d8b6e65c73cae2050ae1853d4b65948c9ad159e4671d6500"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    },
+    {
+      "topology": "C6o",
+      "method_id": "neural_gm",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 0.52,
+      "cross_seed_median_of_per_seed_tail_average": 0.36,
+      "output_path": "results/performance/data/C6o/neural_gm_starving_stations.tsv",
+      "output_sha256": "dff9c19edb7da0c924d2772a6bd007f90d0183391aa40f1d11c507c9c05b3920",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "code/neural_bandit_bridge/runs/20261002_neural_matched_novel256/neural_gm_C6o/clean_data/C6o_333333333333_20_DEF_STD_150.0_NB_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "6ced11d2295dc9d7dc7c9f5355ef02b7231c4a0812c43f508d6c3a824e809957"
+          },
+          "paired_reward": {
+            "original_repository_path": "code/neural_bandit_bridge/runs/20261002_neural_matched_novel256/neural_gm_C6o/clean_data/C6o_333333333333_20_DEF_STD_150.0_NB_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "a506859075ec28c85d31b2e5c52e1bd7db4077a74223b2f0a9b1789f9e87cdae"
+          },
+          "source_container": "matched_novel256_rerun"
+        }
+      ]
+    },
+    {
+      "topology": "C6o",
+      "method_id": "qnn_gm",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 0.3508,
+      "cross_seed_median_of_per_seed_tail_average": 0.25,
+      "output_path": "results/performance/data/C6o/qnn_gm_starving_stations.tsv",
+      "output_sha256": "820b907a400582bccbfb8f00c43e0a38ad7b9985a9df46dcfe7b5d2b8c057dc3",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_qnn_hgmt_C6o/clean_data/C6o_333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "14097b8ec13856da2c3ff6e7ea112394f64f41f88f24589791929f3fac11c027"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_qnn_hgmt_C6o/clean_data/C6o_333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "ae128524e542c51e23f4b69e4e189890022302d4a87488b1b61f378ef0883871"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    },
+    {
+      "topology": "C6o",
+      "method_id": "neural_hcm",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 0.0804,
+      "cross_seed_median_of_per_seed_tail_average": 0.04,
+      "output_path": "results/performance/data/C6o/neural_hcm_starving_stations.tsv",
+      "output_sha256": "a8c0c54f5ef63ca641cf016b2a7f9f19b45158c0330335fd90aec137949485be",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "code/neural_bandit_bridge/runs/20261002_neural_matched_novel256/neural_hcm_C6o/clean_data/C6o_333333333333_20_DEGA_STD_150.0_NB_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "d4e9c1c37d6eff28208b2e16106a003acd5da1493d664742bdbf4a097febfd6f"
+          },
+          "paired_reward": {
+            "original_repository_path": "code/neural_bandit_bridge/runs/20261002_neural_matched_novel256/neural_hcm_C6o/clean_data/C6o_333333333333_20_DEGA_STD_150.0_NB_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "8fa856ff134c37ea83132129db0ce7d1641aab9bb9e6e6a34b659f195a6fa9e6"
+          },
+          "source_container": "matched_novel256_rerun"
+        }
+      ]
+    },
+    {
+      "topology": "C6o",
+      "method_id": "qnn_hcm",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 0.06120000000000001,
+      "cross_seed_median_of_per_seed_tail_average": 0.04,
+      "output_path": "results/performance/data/C6o/qnn_hcm_starving_stations.tsv",
+      "output_sha256": "8c40565e1520af92787bb9c45196973323248821b3eda58c2e2fe3cb45576133",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_qnn_hcm_C6o/clean_data/C6o_333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "7609d5c6f1e5053e4cc78792505e35d72b72ac460b6dcd7325b495b54a0f1f58"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_qnn_hcm_C6o/clean_data/C6o_333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "4472d4822e01d05f50a10a6efb4b0e45b73d0903241cdf8623214e9393389516"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    },
+    {
+      "topology": "MER_FLOORS_CH20_S5",
+      "method_id": "default",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 26.476399999999995,
+      "cross_seed_median_of_per_seed_tail_average": 26.28,
+      "output_path": "results/performance/data/MER_FLOORS_CH20_S5/default_starving_stations.tsv",
+      "output_sha256": "fb8fd88dacfb9571212af7672a8288dd4858ce17114041174ae2fc845063fac5",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_classic_nonhcm_CH20/data/MER_FLOORS_CH20_S5/idle/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_IDLE_UNI_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "08d391e384695163c0e22646ec918c286e74676e8ef0fb032b685000ea070603"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_classic_nonhcm_CH20/data/MER_FLOORS_CH20_S5/idle/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_IDLE_UNI_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "e6982556192a9e79f6b6df417cf6151b6e1d206f701f4bd8c325e42ad66e64c3"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    },
+    {
+      "topology": "MER_FLOORS_CH20_S5",
+      "method_id": "epsilon_greedy",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 3.0727999999999995,
+      "cross_seed_median_of_per_seed_tail_average": 3.17,
+      "output_path": "results/performance/data/MER_FLOORS_CH20_S5/epsilon_greedy_starving_stations.tsv",
+      "output_sha256": "eec29d95fb52054506b4878496f7aa72b32a9aff9bfb476b9390dc24237e6a3e",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_classic_nonhcm_CH20/data/MER_FLOORS_CH20_S5/egreedy/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_EGREED_UNI_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "c78d991ee3cec629bcefb5ebb4531e162e25d153f006fd3404b41933c1f0ceb9"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_classic_nonhcm_CH20/data/MER_FLOORS_CH20_S5/egreedy/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_EGREED_UNI_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "56b7cf8aaf0fd40df430170829a2c6aeb55ec1e9b94768ae03ddf49bee24bdc1"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    },
+    {
+      "topology": "MER_FLOORS_CH20_S5",
+      "method_id": "gm_ts",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 8.203199999999999,
+      "cross_seed_median_of_per_seed_tail_average": 5.65,
+      "output_path": "results/performance/data/MER_FLOORS_CH20_S5/gm_ts_starving_stations.tsv",
+      "output_sha256": "e62028311c752dd08766ee2e6b46c6212dd92526e4081bc4ec65054addd2e59d",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_classic_nonhcm_CH20/data/MER_FLOORS_CH20_S5/tgnorm_paper/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_TGNORM_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "ee4629e4d322c4ab6d4aa1c7f0347ad99fe229e0951a767026eeec0d1ebb2b93"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_classic_nonhcm_CH20/data/MER_FLOORS_CH20_S5/tgnorm_paper/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_TGNORM_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "c8e1ed82ffb6e7470f20252f95883fb4576e6974716622dd651fe89da3372cbe"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    },
+    {
+      "topology": "MER_FLOORS_CH20_S5",
+      "method_id": "hcm_ts",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 2.6612,
+      "cross_seed_median_of_per_seed_tail_average": 2.92,
+      "output_path": "results/performance/data/MER_FLOORS_CH20_S5/hcm_ts_starving_stations.tsv",
+      "output_sha256": "e873f41f1bf4943cba4d3e222cb25ab16bf720b54a1889b62a2a9dc2cc1607df",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "original_run/hcm_ts256/MER_FLOORS_CH20_S5/data/MER_FLOORS_CH20_S5/tgnorm_ring/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_TGNORM_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "c074347ad539709807084f5266a77ad188393d3e969f7a2fce27272b1879d259"
+          },
+          "paired_reward": {
+            "original_repository_path": "original_run/hcm_ts256/MER_FLOORS_CH20_S5/data/MER_FLOORS_CH20_S5/tgnorm_ring/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_TGNORM_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "57aa39071ebe5c0aad7f2787c831642f8a8dd1db080748ca917b10ba48996443"
+          },
+          "source_container": "HCM_TS_NOVEL256_25SEED_20261007"
+        }
+      ],
+      "source_provenance": "hcm_ts256_run_provenance.json"
+    },
+    {
+      "topology": "MER_FLOORS_CH20_S5",
+      "method_id": "inspire",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 2.6471999999999998,
+      "cross_seed_median_of_per_seed_tail_average": 2.69,
+      "output_path": "results/performance/data/MER_FLOORS_CH20_S5/inspire_starving_stations.tsv",
+      "output_sha256": "e0e89780d504ebaebbd41deec1596539249901afcff1c1c15af9bec2b3bf7a47",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 24,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_inspire_CH20_fast/data/MER_FLOORS_CH20_S5/inspire/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_INSPIRE_UNI_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "326ee212180cf03de11439d1c2ce64b6fab4d3e3a4c3e8bd9aceb5f6a4224d4c"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_inspire_CH20_fast/data/MER_FLOORS_CH20_S5/inspire/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_INSPIRE_UNI_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "7222fec0f11a35ff1865f00ffad985fe1f393390d42df45ba270fbb9ba0a1131"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 25,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_inspire_CH20_seed25/data/MER_FLOORS_CH20_S5/inspire/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_INSPIRE_UNI_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "bd9ca24e32b70df239439df41722c5b9a468807b1b1cec28f0dabda38f1a7408"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_inspire_CH20_seed25/data/MER_FLOORS_CH20_S5/inspire/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_INSPIRE_UNI_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "3adc1a7a4ec53071c14677f957ff9e4a024d6c82e9c1563ddde0db92a61d6921"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    },
+    {
+      "topology": "MER_FLOORS_CH20_S5",
+      "method_id": "neural_gm",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 2.7616,
+      "cross_seed_median_of_per_seed_tail_average": 2.71,
+      "output_path": "results/performance/data/MER_FLOORS_CH20_S5/neural_gm_starving_stations.tsv",
+      "output_sha256": "42ec98156032b28d4b36a0ae4c0c322a6d7d98adbee15a17f0eaccf613d5238c",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "code/neural_bandit_bridge/runs/20261002_neural_matched_novel256/neural_gm_MER_FLOORS_CH20_S5/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_NB_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "9d4deb91a57a3a8fefe5ba81910871ef257633bb90df58cb6547152b80faeb3c"
+          },
+          "paired_reward": {
+            "original_repository_path": "code/neural_bandit_bridge/runs/20261002_neural_matched_novel256/neural_gm_MER_FLOORS_CH20_S5/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_NB_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "f4b54f446290f9f22fd1cd6ca3f81ad0a028f33277ba026c801b2e5f6a000b6c"
+          },
+          "source_container": "matched_novel256_rerun"
+        }
+      ]
+    },
+    {
+      "topology": "MER_FLOORS_CH20_S5",
+      "method_id": "qnn_gm",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 2.2123999999999997,
+      "cross_seed_median_of_per_seed_tail_average": 2.16,
+      "output_path": "results/performance/data/MER_FLOORS_CH20_S5/qnn_gm_starving_stations.tsv",
+      "output_sha256": "3483c1c9ebc061be3ec12e98c596b11d6c80aada3aca48a4811cd29bd9cb774e",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 1,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_001/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "c35e513e247e9cb2fbb7e131f9f57dc85f86b859ea13c5ac92c13b98992fe470"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_001/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "91c88ddf9f18481332a01e15456388857a8e6b02fe9542cafa79df0bcede96fc"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 2,
+          "physical_seed_end": 2,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_002/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "27882e73d5382a770045165831a7b5505f53aa4841c291296d1ad6173cba2235"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_002/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "0d748e0ca4ae5e7053b7112ebba14e6ee7d4f7a205b6d44ca7577b6f1185e9c7"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 3,
+          "physical_seed_end": 3,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_003/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "7e377524fcdb006c6ef146605f78e4ee03a01a1467970b0af4b88327c72bc7f1"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_003/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "ba3a485226fba091a1e73b40f2664b30a4d92cbe92979b69be85a735aed9ea96"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 4,
+          "physical_seed_end": 4,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_004/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "6ea66184a87bd142632e11599d05e73ca9a8a76e2af94fb400135d9228f481fa"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_004/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "1faf516d3b75a4deeb1c108a3d9619246a8dd408425f6516000675c7d3124f58"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 5,
+          "physical_seed_end": 5,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_005/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "dc05f8ccc0acd895b08c37c7cdc6f7b5925ecb19e702924cc829fcd328c98d65"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_005/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "df147bc903976d1da024740713e74c79ce5381cbf1f7901aa4003acb0842c453"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 6,
+          "physical_seed_end": 6,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_006/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "938acf79ef04ce0ec3e4e715bebbc4d1dc598cf6f6549a81c0496bddd07a7b6d"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_006/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "2d8627887827668edb7eb336143536877f75296f20ef42063ebf94418ea5fad1"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 7,
+          "physical_seed_end": 7,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_007/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "a07540e069ead9044f3e7af413385b976098f9813109ee20b50222b4feeb2ea5"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_007/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "bfc40d9eaa17c86fd2753939c279e17757d46e2b8a8043387a6d55204ee64b6f"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 8,
+          "physical_seed_end": 8,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_008/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "081692a8c6a60266dac587205e8064498219c863c889520ddbb0fb45a9ce9a6f"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_008/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "f8b71b0c5834736084199b29649b0523c84d63ba7a8e3d154f9e977fbd74f16a"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 9,
+          "physical_seed_end": 9,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_009/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "a2da2276034a9ebb19497164c5a562fe1f6aed294d8ceaee00f832684bdecfe9"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_009/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "72b4d7c2a220e6d40f31aa7cb407e2dcc46fc708d0bae18fddd62778b474367a"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 10,
+          "physical_seed_end": 10,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_010/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "2839b4f5ca91926b2291544a17ee6b6c1ac70753747dda25f3caf9c5c48f6719"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_010/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "08e789d001b5038012a8c4994483be7fb4bb04e5ccf985d5cda77f6797796774"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 11,
+          "physical_seed_end": 11,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_011/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "30a1a12e896aafb501fe8756400113b63d42682fb3681a8a90e004660f3fe80c"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_011/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "dd6f6a792c678e42b591d6cd524fea9f93a5d76eed724a6044973b3cf6d027ee"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 12,
+          "physical_seed_end": 12,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_012/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "e04c89c84888025181eb53a87d20f4f61a8eaf01298588ef368c18333c923367"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_012/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "1f6fa74191db41eb6170b79e34d3296cdc85cb8131cc968d9d9a0de3acf9d147"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 13,
+          "physical_seed_end": 13,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_013/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "194f810ea61a56f8b2d4ae713db08dc761d25fb888cc7637d184279704795afe"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_013/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "6d486cc7c3d1c2c345d6c565c75d2e3161c17e3d8fff0e4a1a324a2746bb3ce7"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 14,
+          "physical_seed_end": 14,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_014/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "d38744176f7f6486be7a3337d6712ac085d4bb3c3230c90374b6f7c7872f24d1"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_014/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "7f419b4323fbaee9aa9bcc28b7050e65ace60ba55c6d339945daae7b8b59bcd5"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 15,
+          "physical_seed_end": 15,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_015/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "aadfcb63785f64003b264b384191c774bf7ded8bbf6a5b85393bee2cea8392c9"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_015/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "bb3b9f33ebad5cd0be2cdae5a5b4a763162d08f6ea0a94bc1dad4b995686a1b7"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 16,
+          "physical_seed_end": 16,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_016/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "b0eff0a29d1a1c87781410bc95939259b2a75d65c5576cb5313b32c64474d173"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20/shards/seed_016/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "bc8b270e6dcd786de92dc0821d4ca4eae75c5acf98fbd25f03f074b242bea0fd"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 17,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20_tail17_25/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "a4ff9196f3c2f5da84e0bfeb2b4aa3e95646ace30eb153420c8ade001e574c01"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hgmt_CH20_tail17_25/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "7e973b8d76bbc3619fe7456ec0dd75cf95809b1131e0acb97e0247268c354005"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    },
+    {
+      "topology": "MER_FLOORS_CH20_S5",
+      "method_id": "neural_hcm",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 1.8856,
+      "cross_seed_median_of_per_seed_tail_average": 1.74,
+      "output_path": "results/performance/data/MER_FLOORS_CH20_S5/neural_hcm_starving_stations.tsv",
+      "output_sha256": "d5322ece6f0f3c51b2e7c103e0d489bf18d448f86a0dab7080a7e30d973d5a86",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "code/neural_bandit_bridge/runs/20261002_neural_matched_novel256/neural_hcm_MER_FLOORS_CH20_S5/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_NB_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "b23975a9b2d21bdd460e597f08a4fb76d2d901a2173e7e81f78cd00d52a3aec8"
+          },
+          "paired_reward": {
+            "original_repository_path": "code/neural_bandit_bridge/runs/20261002_neural_matched_novel256/neural_hcm_MER_FLOORS_CH20_S5/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_NB_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "12da46930571d46b918b3151641a4746bbf9b956b4bb5fe2192c7a432b397420"
+          },
+          "source_container": "matched_novel256_rerun"
+        }
+      ]
+    },
+    {
+      "topology": "MER_FLOORS_CH20_S5",
+      "method_id": "qnn_hcm",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 1.8348,
+      "cross_seed_median_of_per_seed_tail_average": 1.66,
+      "output_path": "results/performance/data/MER_FLOORS_CH20_S5/qnn_hcm_starving_stations.tsv",
+      "output_sha256": "c30fe48807b4a303e60b5094fde11c17e89b748fe1fc62bca8c3280619920e38",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 5,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_pilot_qnn_hcm_CH20_s1_5/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "7845544abf98219844a7be9d4a65efeb0c711f6aec79672e103249e2e5b555a0"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_pilot_qnn_hcm_CH20_s1_5/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "7b783eb2b48a4d53eb27461af3db51fcfe2ea9581f90602d2ae9c7819e06b251"
+          },
+          "source_container": "original_run"
+        },
+        {
+          "physical_seed_start": 6,
+          "physical_seed_end": 6,
+          "agent_state": {
+            "archive_member": "shards/seed_006/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "79ac2db35d9de52eec99615f36b844e0c3e012f9dc6cbd1703f43efef0609cc2"
+          },
+          "paired_reward": {
+            "archive_member": "shards/seed_006/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "083acfb984f52e3217f823fdc39962c7f25ab2e0697ecf3e0205c70f63c432ca"
+          },
+          "source_container": "restored_archive"
+        },
+        {
+          "physical_seed_start": 7,
+          "physical_seed_end": 7,
+          "agent_state": {
+            "archive_member": "shards/seed_007/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "759fba17db0ac8ecb23efaf282cefae8e3af58334610c7c9ea0bab1aa61078bc"
+          },
+          "paired_reward": {
+            "archive_member": "shards/seed_007/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "1e86a9300e512d02f1f7b65e5a73243ec05fcdb101ecd6a243bdc9cae8235ec5"
+          },
+          "source_container": "restored_archive"
+        },
+        {
+          "physical_seed_start": 8,
+          "physical_seed_end": 8,
+          "agent_state": {
+            "archive_member": "shards/seed_008/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "03533aba346378e28111b9a50dc9433c63c90d2e628906c99b5afca55cc1e1b5"
+          },
+          "paired_reward": {
+            "archive_member": "shards/seed_008/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "fe49365bc64e73d98dfaac010c2191fae3ac419744055cdd8f54f9713b36775f"
+          },
+          "source_container": "restored_archive"
+        },
+        {
+          "physical_seed_start": 9,
+          "physical_seed_end": 9,
+          "agent_state": {
+            "archive_member": "shards/seed_009/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "c9282f367e2197aef7c4094fc2d1fe366f9640b93e5a30406f68572adf795955"
+          },
+          "paired_reward": {
+            "archive_member": "shards/seed_009/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "007eeb2198d5debde8a4e16a8c54a5bde8f97d24207cb50e693ee822f1544c38"
+          },
+          "source_container": "restored_archive"
+        },
+        {
+          "physical_seed_start": 10,
+          "physical_seed_end": 10,
+          "agent_state": {
+            "archive_member": "shards/seed_010/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "40b9be8a7275dd9e24ed2f731a408a2804deccea83aaf012eda5126855e637b2"
+          },
+          "paired_reward": {
+            "archive_member": "shards/seed_010/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "64a912c3fbed1b3ce296755ffa2b3079e9fbf2de765e05ac0118b05b495b56e8"
+          },
+          "source_container": "restored_archive"
+        },
+        {
+          "physical_seed_start": 11,
+          "physical_seed_end": 11,
+          "agent_state": {
+            "archive_member": "shards/seed_011/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "b7be0a17f359e631ccefce8104231cb2b4cd6f826d9a42e543004492a2b6a107"
+          },
+          "paired_reward": {
+            "archive_member": "shards/seed_011/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "885e1692d1628b4e06a196ae5cc752a3f46beb7ad68d6dcebcc89b944bf9ad9f"
+          },
+          "source_container": "restored_archive"
+        },
+        {
+          "physical_seed_start": 12,
+          "physical_seed_end": 12,
+          "agent_state": {
+            "archive_member": "shards/seed_012/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "e2203970f57d5e324ba157f186df45f3d623e3c00fe714e8a8894cba13fcd51a"
+          },
+          "paired_reward": {
+            "archive_member": "shards/seed_012/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "4a08811d7da34f1cf78f26ce667f3c47e711c0503b5e77ea78fe98541dfdcea2"
+          },
+          "source_container": "restored_archive"
+        },
+        {
+          "physical_seed_start": 13,
+          "physical_seed_end": 13,
+          "agent_state": {
+            "archive_member": "shards/seed_013/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "582ce89a4f4f8f1e408be672fba18021d4b493a9d333ffdf3c6240e1ea4ca5db"
+          },
+          "paired_reward": {
+            "archive_member": "shards/seed_013/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "da04846f759729ffeb326b25cc434500c9bd6d1ae8157e2144be3a2764ea3fce"
+          },
+          "source_container": "restored_archive"
+        },
+        {
+          "physical_seed_start": 14,
+          "physical_seed_end": 14,
+          "agent_state": {
+            "archive_member": "shards/seed_014/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "a1851ddb67fdc09e8da1696f453d72e13329c4b5a653e7be5e831998680a4f18"
+          },
+          "paired_reward": {
+            "archive_member": "shards/seed_014/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "3acda065c36e3cf035572b29b020844d0c921fbfd3aa0d85e20a75d24825f9e4"
+          },
+          "source_container": "restored_archive"
+        },
+        {
+          "physical_seed_start": 15,
+          "physical_seed_end": 15,
+          "agent_state": {
+            "archive_member": "shards/seed_015/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "795caccf6c7bccddcf5e831c3ccf830d2502324e005620625aa0afb5c51394c4"
+          },
+          "paired_reward": {
+            "archive_member": "shards/seed_015/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "cdad0c742006853c71d3d1e92c2f193368bc7ef8ad149c5058f42756f3b3bd61"
+          },
+          "source_container": "restored_archive"
+        },
+        {
+          "physical_seed_start": 16,
+          "physical_seed_end": 16,
+          "agent_state": {
+            "archive_member": "shards/seed_016/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "6caec1a0c786389594d6733b5057a481c7ecac5670fb5fb757a7cb38c12e433f"
+          },
+          "paired_reward": {
+            "archive_member": "shards/seed_016/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "2df637f94618930541a8c2f679bcd6cfa73da0d4412f27689747574462bf4e3d"
+          },
+          "source_container": "restored_archive"
+        },
+        {
+          "physical_seed_start": 17,
+          "physical_seed_end": 17,
+          "agent_state": {
+            "archive_member": "shards/seed_017/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "3091d5690db1029662e2db03f93f8f59841c71838c29ea37636755e182838529"
+          },
+          "paired_reward": {
+            "archive_member": "shards/seed_017/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "df7ab4cb49336aa4177f52aa106b31b5ec0fbdbab1ee9657cef8418009ac85d0"
+          },
+          "source_container": "restored_archive"
+        },
+        {
+          "physical_seed_start": 18,
+          "physical_seed_end": 18,
+          "agent_state": {
+            "archive_member": "shards/seed_018/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "acebdca225a690c805baa805e207ba9c518dc135b1c8480c9ce573af85733a18"
+          },
+          "paired_reward": {
+            "archive_member": "shards/seed_018/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "2dbfa0c76e796acc6449632958636fbc44df468d4e732079394f03df9e85feca"
+          },
+          "source_container": "restored_archive"
+        },
+        {
+          "physical_seed_start": 19,
+          "physical_seed_end": 19,
+          "agent_state": {
+            "archive_member": "shards/seed_019/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "c9b8d4982de525f595090db45351e259bfa39181b745d83a943839da5ba301aa"
+          },
+          "paired_reward": {
+            "archive_member": "shards/seed_019/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "1ab04d40ccdda764cd842510af82a6cc006012f58f0486ae4d8934a1bf6f9db3"
+          },
+          "source_container": "restored_archive"
+        },
+        {
+          "physical_seed_start": 20,
+          "physical_seed_end": 20,
+          "agent_state": {
+            "archive_member": "shards/seed_020/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "247384ef8acfd11a60c7fc638f77400af26d0bc2bc96efda984989bdbf6cdad4"
+          },
+          "paired_reward": {
+            "archive_member": "shards/seed_020/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "a94853816d963228c315040247f4cacc52d48c0ea268c15058635021ec25e322"
+          },
+          "source_container": "restored_archive"
+        },
+        {
+          "physical_seed_start": 21,
+          "physical_seed_end": 21,
+          "agent_state": {
+            "archive_member": "shards/seed_021/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "7cdb44eff6e9dc982e4c3073afa89572a349f1da634670aaa87d8b391c83af52"
+          },
+          "paired_reward": {
+            "archive_member": "shards/seed_021/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "07af27eaaa2b571611cf2a677f0982f11874facafbfd62b33dd83f185485710e"
+          },
+          "source_container": "restored_archive"
+        },
+        {
+          "physical_seed_start": 22,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hcm_CH20_tail22_25/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "c31085f047c72860c207ece95a639d3ca54e910d4534365cdfa3f3f3d1193bca"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260919_arpfix_full25_qnn_hcm_CH20_tail22_25/clean_data/MER_FLOORS_CH20_S5_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "b21967c716f225aeaf52a07a08f1fee8d60ac3ef5079cc843570b7d66dada6cb"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    },
+    {
+      "topology": "MER_FLOORS_BAD_DIM",
+      "method_id": "default",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 30.682799999999997,
+      "cross_seed_median_of_per_seed_tail_average": 30.71,
+      "output_path": "results/performance/data/MER_FLOORS_BAD_DIM/default_starving_stations.tsv",
+      "output_sha256": "548d1118e877fddff28bc722f0bae86b430250d7438feb43645c689b00e6f9e1",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_classic_BAD/data/MER_FLOORS_BAD_DIM/idle/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_IDLE_UNI_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "70a972a24242f150d9a2e53c43ce78a7f52841adc2fa63cbc4fcaa6079f40799"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_classic_BAD/data/MER_FLOORS_BAD_DIM/idle/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_IDLE_UNI_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "8a4b357fe367bc5959a933a22757a14bce33c8fe07cd0e87552d0ab0fbad1e53"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    },
+    {
+      "topology": "MER_FLOORS_BAD_DIM",
+      "method_id": "epsilon_greedy",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 18.6476,
+      "cross_seed_median_of_per_seed_tail_average": 18.17,
+      "output_path": "results/performance/data/MER_FLOORS_BAD_DIM/epsilon_greedy_starving_stations.tsv",
+      "output_sha256": "b4f0f0c65312b51792d3db192c64cac44dc0a4287a35e7ff333fb8b20e9cb77f",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_classic_BAD/data/MER_FLOORS_BAD_DIM/egreedy/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_EGREED_UNI_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "5ccc174c82ae9e5a6268d285e945345d8f32d9d51407c88c40d7cbb663b4ad7a"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_classic_BAD/data/MER_FLOORS_BAD_DIM/egreedy/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_EGREED_UNI_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "bef1e60a84183db32f7ae40ac044f0bbc8812fb2ee108053ceba68edb5818cfc"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    },
+    {
+      "topology": "MER_FLOORS_BAD_DIM",
+      "method_id": "gm_ts",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 22.6628,
+      "cross_seed_median_of_per_seed_tail_average": 22.83,
+      "output_path": "results/performance/data/MER_FLOORS_BAD_DIM/gm_ts_starving_stations.tsv",
+      "output_sha256": "d0f326e8d3561ef8d575e760340edab77bd9d00723da59cdeb23827067bff755",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_classic_BAD/data/MER_FLOORS_BAD_DIM/tgnorm_paper/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_TGNORM_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "67afd95a1937a1eec10912c72efe027635e7ea327a687c18e89f9ea6f071e8b2"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_classic_BAD/data/MER_FLOORS_BAD_DIM/tgnorm_paper/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_TGNORM_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "bfc452ff6a3aecb81181d3608aea1d13842df1cd7b1be059542c555d4d683a6e"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    },
+    {
+      "topology": "MER_FLOORS_BAD_DIM",
+      "method_id": "hcm_ts",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 12.021600000000001,
+      "cross_seed_median_of_per_seed_tail_average": 11.88,
+      "output_path": "results/performance/data/MER_FLOORS_BAD_DIM/hcm_ts_starving_stations.tsv",
+      "output_sha256": "4c787f1df718746ac8dc28800bb8db86936b46a25d730ee5ad6061f3e01e52db",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "original_run/hcm_ts256/MER_FLOORS_BAD_DIM/data/MER_FLOORS_BAD_DIM/tgnorm_ring/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_TGNORM_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "367df7637e0a82d2cf5a9f733d687d0e0e536eca1e21914a63841389053dd31d"
+          },
+          "paired_reward": {
+            "original_repository_path": "original_run/hcm_ts256/MER_FLOORS_BAD_DIM/data/MER_FLOORS_BAD_DIM/tgnorm_ring/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_TGNORM_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "6ab9343f14696feecc3a9a7dc43092e0060aa843b8bd9ba65ecabb4e4c5dc934"
+          },
+          "source_container": "HCM_TS_NOVEL256_25SEED_20261007"
+        }
+      ],
+      "source_provenance": "hcm_ts256_run_provenance.json"
+    },
+    {
+      "topology": "MER_FLOORS_BAD_DIM",
+      "method_id": "inspire",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 19.202,
+      "cross_seed_median_of_per_seed_tail_average": 19.71,
+      "output_path": "results/performance/data/MER_FLOORS_BAD_DIM/inspire_starving_stations.tsv",
+      "output_sha256": "00ca16fc5206d8e7ec1927bd6dfd25a8878ec5f6148d5fa25994a53cb014e99c",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_classic_BAD/data/MER_FLOORS_BAD_DIM/inspire/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_INSPIRE_UNI_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "c9a4f94e1a9de204e378976e57d7ce8b79b35ed43f9392adafedf3a95a4d6301"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_classic_BAD/data/MER_FLOORS_BAD_DIM/inspire/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_INSPIRE_UNI_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "9b98c1b1f3f7aa4cc7e1316e05693e0ecb2fec7d991829ef1960e98905622c90"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    },
+    {
+      "topology": "MER_FLOORS_BAD_DIM",
+      "method_id": "neural_gm",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 17.5204,
+      "cross_seed_median_of_per_seed_tail_average": 18.14,
+      "output_path": "results/performance/data/MER_FLOORS_BAD_DIM/neural_gm_starving_stations.tsv",
+      "output_sha256": "1e3b0ced931db79d6132cfe55672aee58f6afa7a4e7438cdb257a8d41fc83105",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "code/neural_bandit_bridge/runs/20261002_neural_matched_novel256/neural_gm_MER_FLOORS_BAD_DIM/clean_data/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_NB_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "8285e2b3329ccdea5c54dbbe2df77555c355adcad2ac661c57dbf3a1bed6cd58"
+          },
+          "paired_reward": {
+            "original_repository_path": "code/neural_bandit_bridge/runs/20261002_neural_matched_novel256/neural_gm_MER_FLOORS_BAD_DIM/clean_data/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_NB_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "445bd45c967604f26eb9fb6e5ab3e8b8d82fbe26c51d2e5a63c5d276198570ee"
+          },
+          "source_container": "matched_novel256_rerun"
+        }
+      ]
+    },
+    {
+      "topology": "MER_FLOORS_BAD_DIM",
+      "method_id": "qnn_gm",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 14.386000000000001,
+      "cross_seed_median_of_per_seed_tail_average": 14.22,
+      "output_path": "results/performance/data/MER_FLOORS_BAD_DIM/qnn_gm_starving_stations.tsv",
+      "output_sha256": "c94b65cd3fdafcb1cc1fdbdc0da0a33cfacff01d8682268ed127070933cb7af7",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_qnn_hgmt_BAD/clean_data/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "da00b08d6d76dfd2fd04d2f1e8ea71ab6c74aff2d17cd8be539b164d853e0c63"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_qnn_hgmt_BAD/clean_data/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEF_STD_150.0_QNN_HGMT_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "ca4796e06afd0378c50a91ac00d003c77403311a3a1d4272dc741b5e0964d30e"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    },
+    {
+      "topology": "MER_FLOORS_BAD_DIM",
+      "method_id": "neural_hcm",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 10.1512,
+      "cross_seed_median_of_per_seed_tail_average": 9.65,
+      "output_path": "results/performance/data/MER_FLOORS_BAD_DIM/neural_hcm_starving_stations.tsv",
+      "output_sha256": "84b531a73fbe4cac6820e463a28cb6df0a71b4c42e2b6cc98037afae6134e374",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "code/neural_bandit_bridge/runs/20261002_neural_matched_novel256/neural_hcm_MER_FLOORS_BAD_DIM/clean_data/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_NB_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "8a2a4b4c392949ca5d717bdf204f4f78aba4b7b8604ce2398aa4b9839f66ed5b"
+          },
+          "paired_reward": {
+            "original_repository_path": "code/neural_bandit_bridge/runs/20261002_neural_matched_novel256/neural_hcm_MER_FLOORS_BAD_DIM/clean_data/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_NB_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "dde9766460bbe965c4a2a9fef8ac9127bf26dbe5855f762983b7e987953e2ab6"
+          },
+          "source_container": "matched_novel256_rerun"
+        }
+      ]
+    },
+    {
+      "topology": "MER_FLOORS_BAD_DIM",
+      "method_id": "qnn_hcm",
+      "physical_seeds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "cycles": [
+        0,
+        2000
+      ],
+      "tail_cycles": [
+        1901,
+        2000
+      ],
+      "cross_seed_mean_of_per_seed_tail_average": 9.0572,
+      "cross_seed_median_of_per_seed_tail_average": 9.14,
+      "output_path": "results/performance/data/MER_FLOORS_BAD_DIM/qnn_hcm_starving_stations.tsv",
+      "output_sha256": "f5825e7750b80ec12da5aab777eabdc9b5cbe37cd374acc1ae15119d84d12bad",
+      "source_parts": [
+        {
+          "physical_seed_start": 1,
+          "physical_seed_end": 25,
+          "agent_state": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_qnn_hcm_BAD/clean_data/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_agent_state.tsv",
+            "sha256": "c0cc3a6f35319e2a5288dc7b02ace96d8a6c50ea58b5d11e813f886fd80a7b5d"
+          },
+          "paired_reward": {
+            "original_repository_path": "neural_bandit_bridge/runs/20260921_arpfix2000_qnn_hcm_BAD/clean_data/MER_FLOORS_BAD_DIM_33333333333333333333333333333333333333333333333333_20_DEGA_STD_150.0_QNN_HCM_ADHOC_0.075_BOTH_MINSTREL_rew.tsv",
+            "sha256": "54a69dfad34e7ab39f9d8c4ae0aa53d0e1ade070ed8887c199638404d7a147a9"
+          },
+          "source_container": "original_run"
+        }
+      ]
+    }
+  ]
+}

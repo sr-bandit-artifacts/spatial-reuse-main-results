@@ -1,0 +1,25 @@
+topology,method,backend,batch,scope,calls,mean_ms,median_ms,p95_ms,minimum_ms,maximum_ms
+C6o,QNN Bandit (GM),hybrid_native_frozen_fused,512,fresh_forward_posterior_prediction,1000,0.279797019,0.278947,0.2825425,0.277489,0.317844
+MER_FLOORS_BAD_DIM,QNN Bandit (GM),hybrid_native_frozen_fused,512,fresh_forward_posterior_prediction,1000,0.279971409,0.279032,0.2822995,0.27785,0.31551
+MER_FLOORS_CH20_S5,Neural Bandit (GM),numpy_frozen_mlp,1,fresh_forward_posterior_prediction,1000,0.009310248000000002,0.009237,0.009809,0.009057,0.014647
+MER_FLOORS_BAD_DIM,QNN Bandit (GM),native_frozen_fused,1,fresh_forward_posterior_prediction,1000,0.006428692,0.006192,0.006813,0.005922,0.038282
+MER_FLOORS_CH20_S5,QNN Bandit (HCM),hybrid_native_frozen_fused,512,fresh_forward_posterior_prediction,1000,0.280522477,0.279729,0.2828605,0.278251,0.316722
+C6o,Neural Bandit (HCM),numpy_frozen_mlp,512,fresh_forward_posterior_prediction,1000,0.07928806000000001,0.078958,0.081223,0.078337,0.108403
+C6o,Neural Bandit (GM),numpy_frozen_mlp,512,fresh_forward_posterior_prediction,1000,0.07907561099999999,0.078777,0.08106305,0.078096,0.084889
+MER_FLOORS_CH20_S5,QNN Bandit (HCM),native_frozen_fused,1,fresh_forward_posterior_prediction,1000,0.0063650469999999995,0.0061765,0.0067735,0.005911,0.03202
+MER_FLOORS_BAD_DIM,QNN Bandit (HCM),hybrid_native_frozen_fused,512,fresh_forward_posterior_prediction,1000,0.280960956,0.280575,0.283872,0.27831,0.318295
+MER_FLOORS_CH20_S5,QNN Bandit (GM),native_frozen_fused,1,fresh_forward_posterior_prediction,1000,0.0064028159999999995,0.006152,0.0067535,0.005971,0.035586
+MER_FLOORS_CH20_S5,Neural Bandit (GM),numpy_frozen_mlp,512,fresh_forward_posterior_prediction,1000,0.08057231000000001,0.08013,0.08323555,0.079528,0.108844
+MER_FLOORS_BAD_DIM,Neural Bandit (GM),numpy_frozen_mlp,1,fresh_forward_posterior_prediction,1000,0.009300118000000001,0.009218,0.009788499999999999,0.009067,0.013154
+C6o,QNN Bandit (HCM),native_frozen_fused,1,fresh_forward_posterior_prediction,1000,0.0063962360000000005,0.006151,0.0067634999999999995,0.005941,0.033693
+MER_FLOORS_CH20_S5,Neural Bandit (HCM),numpy_frozen_mlp,1,fresh_forward_posterior_prediction,1000,0.009262705,0.009197,0.009729449999999999,0.009037,0.011552
+MER_FLOORS_CH20_S5,QNN Bandit (GM),hybrid_native_frozen_fused,512,fresh_forward_posterior_prediction,1000,0.27999423,0.2791475,0.28218899999999997,0.2777,0.315199
+C6o,Neural Bandit (HCM),numpy_frozen_mlp,1,fresh_forward_posterior_prediction,1000,0.009328587,0.009248,0.009819,0.009037,0.01615
+MER_FLOORS_BAD_DIM,Neural Bandit (HCM),numpy_frozen_mlp,512,fresh_forward_posterior_prediction,1000,0.080454994,0.08018,0.0824155,0.079088,0.086502
+MER_FLOORS_BAD_DIM,QNN Bandit (HCM),native_frozen_fused,1,fresh_forward_posterior_prediction,1000,0.006373755,0.006162,0.00677345,0.005971,0.033854
+MER_FLOORS_BAD_DIM,Neural Bandit (HCM),numpy_frozen_mlp,1,fresh_forward_posterior_prediction,1000,0.00919765,0.009118,0.009648,0.008977,0.021821
+C6o,Neural Bandit (GM),numpy_frozen_mlp,1,fresh_forward_posterior_prediction,1000,0.009232426,0.009157,0.009689449999999999,0.008997,0.014517
+MER_FLOORS_CH20_S5,Neural Bandit (HCM),numpy_frozen_mlp,512,fresh_forward_posterior_prediction,1000,0.080294906,0.07995,0.082275,0.079369,0.10707
+MER_FLOORS_BAD_DIM,Neural Bandit (GM),numpy_frozen_mlp,512,fresh_forward_posterior_prediction,1000,0.08050188700000001,0.0802,0.08249405,0.079519,0.087453
+C6o,QNN Bandit (GM),native_frozen_fused,1,fresh_forward_posterior_prediction,1000,0.0064013659999999995,0.006181,0.006803,0.005952,0.036488
+C6o,QNN Bandit (HCM),hybrid_native_frozen_fused,512,fresh_forward_posterior_prediction,1000,0.278713756,0.2776845,0.2813395,0.276427,0.314959
